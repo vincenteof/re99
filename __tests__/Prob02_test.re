@@ -24,8 +24,7 @@ describe("Prob02.butLast", () => {
      ), expect(() =>
           butLast([1])
         )],
-    ret =>
-    ret |> toThrow
+    toThrow,
   );
 });
 
@@ -53,7 +52,6 @@ describe("Prob02.butLastSafe", () => {
      ), expect(() =>
           getRet([1])
         )],
-    ret =>
-    ret |> toThrow
+    toThrow,
   );
 });
