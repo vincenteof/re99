@@ -16,6 +16,11 @@ describe("Prob01.last1", () => {
     ))
     |> toEqual((2, 3, 4, 5, "d"))
   );
+  test("throws exception when the list is empty", () =>
+    expect(() =>
+      last1([])
+    ) |> toThrow
+  );
 });
 
 describe("Prob01.last2", () => {
@@ -32,5 +37,10 @@ describe("Prob01.last2", () => {
       last2(["a", "b", "c", "d"]),
     ))
     |> toEqual((2, 3, 4, 5, "d"))
+  );
+  test("throws exception when the list is empty", () =>
+    expect(() =>
+      last2([])
+    ) |> toThrow
   );
 });
