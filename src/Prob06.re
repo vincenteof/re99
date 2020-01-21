@@ -1,0 +1,1 @@
+let isPalindrome = lst => List.(rev(lst) == lst);
